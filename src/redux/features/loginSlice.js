@@ -25,7 +25,7 @@ const loginSlice = createSlice({
             localStorage.removeItem('currentuser')
             state.status = false
             window.location.reload()
-            window.location.href='/login'
+            window.location.href='https://golden-gumption-52a70d.netlify.app/login'
         }
     },
     extraReducers: builder =>{
@@ -39,7 +39,7 @@ const loginSlice = createSlice({
                 state.status = true
                 localStorage.setItem('currentuser', JSON.stringify(action.payload))
                 window.location.reload()
-                window.location.href='/listings'
+                window.location.href='https://golden-gumption-52a70d.netlify.app/listings'
             }else if(!state.response ){
                 state.status = false
             }

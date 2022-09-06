@@ -41,7 +41,7 @@ function SignIn() {
     <div className=''>
         <div>
                 {state.message === true 
-                ? <p className='bg-green-400 text-white font-bold p-4'>Registration Sucess</p> 
+                ? <p className='bg-green-400 text-white font-bold p-4'>Registration Sucess...Please Proceed to Login</p> 
                 : 
                 state.message === false 
                 ? <p className='bg-red-400 text-white font-bold p-4'>Registration Failed...Try Again</p>
