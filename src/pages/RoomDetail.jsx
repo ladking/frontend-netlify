@@ -63,7 +63,7 @@ async function paynow(){
     if(localStorage.getItem('currentuser')){
         initializePayment(onSuccess, onClose)
     }else{
-        window.location.href='https://golden-gumption-52a70d.netlify.app/login'
+        window.location.href='https://golden-gumption-52a70d.netlify.app'
     } 
 }
   return (
