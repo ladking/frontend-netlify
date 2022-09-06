@@ -10,7 +10,7 @@ const initialState = {
 
 export const register = createAsyncThunk('userregister/register',async (user)=>{
     try{
-        const data = (await axios.post('http://localhost:8000/api/user/register', user)).data
+        const data = (await axios.post('https://serene-crag-84345.herokuapp.com/api/user/register', user)).data
         return data
     }catch(err){
         console.log('recieved error:', err)

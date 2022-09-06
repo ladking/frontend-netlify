@@ -1,5 +1,7 @@
 import React from 'react'
 import Button from './reuseables/Button'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 function Body() {
   return (

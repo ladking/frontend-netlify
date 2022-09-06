@@ -14,16 +14,16 @@ const initialState ={
 }
 
 export const getbookings = createAsyncThunk('admin/getbookings', async() =>{
-    const result = await (await axios.get('http://localhost:8000/api/bookings/admingetbooking')).data
+    const result = await (await axios.get('https://serene-crag-84345.herokuapp.com/api/bookings/admingetbooking')).data
     return result
 
 })
 export const getallusers = createAsyncThunk('admin/getallusers', async() =>{
-    const result = await (await axios.get('http://localhost:8000/api/user/getallusers')).data
+    const result = await (await axios.get('https://serene-crag-84345.herokuapp.com/api/user/getallusers')).data
     return result
 })
 export const addRoom = createAsyncThunk('admin/addRoom', async(data) =>{
-    const result = await (await axios.post('http://localhost:8000/api/apartment/addroom', data)).data
+    const result = await (await axios.post('https://serene-crag-84345.herokuapp.com/api/apartment/addroom', data)).data
     return result
 })
 const adminSlice = createSlice({

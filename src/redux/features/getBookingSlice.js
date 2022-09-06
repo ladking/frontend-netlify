@@ -8,11 +8,11 @@ const initialState = {
 }
 
 export const getbookings = createAsyncThunk('booking/getbookings', async(user_id)=>{
-        const bookings = await (await axios.post('http://localhost:8000/api/bookings/getbookingsbyuserid', {userid: user_id})).data
+        const bookings = await (await axios.post('https://serene-crag-84345.herokuapp.com/api/bookings/getbookingsbyuserid', {userid: user_id})).data
         return bookings
 })
 export const cancelBooking = createAsyncThunk('bookings/cancelBooking', async(id) =>{
-    const result = await (await axios.post('http://localhost:8000/api/bookings/cancelbookings', {id: id})).data
+    const result = await (await axios.post('https://serene-crag-84345.herokuapp.com/api/bookings/cancelbookings', {id: id})).data
     return result
     
 })

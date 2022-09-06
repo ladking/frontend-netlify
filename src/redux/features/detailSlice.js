@@ -14,7 +14,7 @@ const initialState ={
 }
 
 export const fetchRoomById = createAsyncThunk('home/fetchRoomById', async(id) => { 
-    const data = (await axios.post("http://localhost:8000/api/apartment/getroombyid", {roomid : id})).data
+    const data = (await axios.post("https://serene-crag-84345.herokuapp.com/api/apartment/getroombyid", {roomid : id})).data
     return data
 })
 

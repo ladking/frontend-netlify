@@ -32,12 +32,11 @@ function SignIn() {
                 confirmpassword:''
             })
         }else if(!data.name || !data.email){
-                console.log('All Filleds required')
+                alert('All Filleds required')
         }else{
-            console.log("password don't match")
+            alert("password don't match")
         }
     }
-    console.log(state.message)
   return (
     <div className=''>
         <div>

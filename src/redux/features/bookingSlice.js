@@ -6,7 +6,7 @@ const initialState ={
     bookingDetails: [] 
 }
 export const bookRoom = createAsyncThunk('bookroom/bookRoom', async(details) =>{
-    const result = (await axios.post('http://localhost:8000/api/bookings/bookroom', details)).data
+    const result = (await axios.post('https://serene-crag-84345.herokuapp.com/api/bookings/bookroom', details)).data
     return result
 })
  const bookSlice = createSlice({

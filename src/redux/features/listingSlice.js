@@ -7,7 +7,7 @@ const initialState ={
     error:''
 }
 export const fetchList = createAsyncThunk('home/fetchList', () => { 
-    return fetch('http://localhost:8000/api/apartment/getrooms')
+    return fetch('https://serene-crag-84345.herokuapp.com/api/apartment/getrooms')
     .then(res =>res.json())
     .then(data => data)
 })
