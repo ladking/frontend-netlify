@@ -87,13 +87,13 @@ async function paynow(){
             </div>
             <div className='p-4 font-medium  sm:w-full'>
                 <p>{room.description}</p>
-                <div className='flex justify-around items-center '>
+                <div className='flex sm:flex-row flex-col sm:justify-around sm:items-center '>
                     <div className='mt-4'>
                         <p><b>Rent per day: </b>N{room.rentperday}</p>
                         <p><b>Room Type: </b>{room.type}</p>
                         <p><b>Maximum Occupant: </b>{room.maxcount}</p>
                     </div>
-                    <div>
+                    <div className=''>
                         <p><b>From:</b> {date.fromDate} ---- <b>To:</b> {date.toDate}</p>
                         <p><span>Total Days:</span> {date.totalDays}</p>
                         <p><span className='font-bold'>Total Amount:</span> {date.totalAmount}</p>

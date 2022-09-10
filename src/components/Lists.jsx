@@ -29,7 +29,7 @@ const [searchKey, setKey]= useState('')
        
     }
 const list = duplicate.map(prev =>(
-    <div key={prev.name} className='rounded-lg m-4 flex flex-col shadow-lg sm:w-[280px]'>
+    <div key={prev.name} className='rounded-lg m-4 flex flex-col shadow-lg sm:w-[280px] w-full'>
         <div className='rounder-lg h-48'>
             <img className="w-full h-full rounded-lg" src={prev.imageurls[0]} alt='' />
         </div>
@@ -51,7 +51,7 @@ const list = duplicate.map(prev =>(
  
   return (
     <div>
-        <div className=' flex justify-around m-4 p-4 shadow-lg'>
+        <div className=' flex justify-around gap-5 m-4 p-4 shadow-lg'>
             <SearchFilter filter={filter} searchKey={searchKey} setKey={setKey} />
             <TypeFilter type={type} handleType={handleType}/>
         </div>
